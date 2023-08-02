@@ -22,10 +22,7 @@
  */
 
 function isTrue(x){
-    if (x != true) {
-        return false;
-    }
-    return true;
+   return x === true;
 }
 
 function isFalse(x) {
@@ -37,19 +34,11 @@ function isFalse(x) {
 }
 
 function not(x) {
-    if (x == false || x == null || x == isNaN(x) || x !== x) {
-        return true;
-    } else {
-        return false;
-    }
+    return !x;
 }
 
 function addOne(x){
-    if (x === Infinity) {
-        return x + 1;
-    }
-    let y = parseInt(x);
-        return y + 1;
+   return Number(x) + 1;
     }
 
 function isEven(x) {
@@ -63,19 +52,11 @@ function isEven(x) {
 }
 
 function isIdentical(x, y) {
-    if (x === y) {
-        return true;
-    } else {
-        return false;
-    }
+    return x === y
 }
 
 function isEqual (x, y) {
-    if (x == y) {
-        return true;
-    } else {
-        return false;
-    }
+    return x == y
 }
 
 function or (x, y) {
